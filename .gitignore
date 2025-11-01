@@ -1,0 +1,18 @@
+# Virtual environment
+myenv/
+venv/
+.env/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Logs and cache
+*.log
+*.sqlite3
+.cache/
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

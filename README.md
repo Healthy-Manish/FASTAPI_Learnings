@@ -3,8 +3,7 @@
 ## Description
 A full-stack Machine Learning web application that predicts ***Insurance Premium Category (Low / Medium / High)*** based on user health and lifestyle attributes.
 The app is fully deployed on AWS and containerized using Docker for production-grade reliability.
-# This application is build over streamlit to create frontend 
-
+This application is build over streamlit to create frontend 
 ### 🧠 Project Overview
 ***Machine Learning–powered web application*** that predicts the Insurance Premium Category (Low / Medium / High) based on user health and lifestyle attributes.<br>
 ### The project includes:
@@ -52,10 +51,10 @@ To set up the project locally, follow these steps:
     http://13.235.246.150:8000/predict
     
     ```
-*** (OPTIONAL) Run  backend locally :**
+**(OPTIONAL) Run  backend locally :**
     ```bash
-      uvicorn app:app --reload --host 0.0.0.0 --port 8000
-      
+       uvicorn app:app --reload --host 0.0.0.0 --port 8000 
+       
     ```
 4. **Frontend--Streamlit :**
 
@@ -85,7 +84,7 @@ To set up the project locally, follow these steps:
     ```bash
       docker run -p 8000:8000 dockername/insurance-premium-api:latest
     ```
-** (OPTIONAL) You can pull my image :**
+**(OPTIONAL) You can pull my image :**
      ```bash
         docker push healthymanish/insurance-premium-api:latest
         

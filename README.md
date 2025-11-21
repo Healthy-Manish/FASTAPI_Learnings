@@ -12,8 +12,8 @@ The app is fully deployed on AWS and containerized using Docker for production-g
   - A Streamlit frontend for user interaction
   - ### Full Docker containerization 
   - ### AWS EC2 deployment
-  <br>
-This application predicts the insurance premium category using the following features:
+  
+### This application predicts the insurance premium category using the following features:
   - Age
   - Weight
   - Height
@@ -31,7 +31,6 @@ This application predicts the insurance premium category using the following fea
 
 ### The entire workflow is automated from model inference → FastAPI API → Streamlit UI.
 ## Installation
-
 To set up the project locally, follow these steps:
 
 1. **Clone the Repository:**
@@ -51,11 +50,12 @@ To set up the project locally, follow these steps:
 
     ```bash
     http://13.235.246.150:8000/predict
+    
     ```
-Opitional **Run  backend locally :**
-
+*** (OPTIONAL) Run  backend locally :**
     ```bash
       uvicorn app:app --reload --host 0.0.0.0 --port 8000
+      
     ```
 4. **Frontend--Streamlit :**
 
@@ -85,9 +85,10 @@ Opitional **Run  backend locally :**
     ```bash
       docker run -p 8000:8000 dockername/insurance-premium-api:latest
     ```
-OPTIONAL **You can pull my image :**
+** (OPTIONAL) You can pull my image :**
      ```bash
         docker push healthymanish/insurance-premium-api:latest
+        
     ```
 6. **API request example :**
 ```json

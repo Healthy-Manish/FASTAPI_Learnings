@@ -69,7 +69,7 @@ To set up the project locally, follow these steps:
     - Step 1: Create Dockerfile
     - Step 2: Build the docker image
     ```bash
-     docker build -t dockername/insurance-premium-api
+     docker build -t dockername/insurance-premium-api .
     ```
     - step 4: docker login:
      ```bash

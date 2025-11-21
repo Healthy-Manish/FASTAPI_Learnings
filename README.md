@@ -3,11 +3,10 @@
 ## Description
 A full-stack Machine Learning web application that predicts ***Insurance Premium Category (Low / Medium / High)*** based on user health and lifestyle attributes.
 The app is fully deployed on AWS and containerized using Docker for production-grade reliability.
-# This application is build over streamlit to create a frontend <br>
-<img src="insurance_premium/Screenshot from 2025-11-21 11-16-33.png"></img>
+# This application is build over streamlit to create frontend 
 
 ### 🧠 Project Overview
-A ***Machine Learning–powered web application*** that predicts the Insurance Premium Category (Low / Medium / High) based on user health and lifestyle attributes.<br>
+***Machine Learning–powered web application*** that predicts the Insurance Premium Category (Low / Medium / High) based on user health and lifestyle attributes.<br>
 ### The project includes:
   - A FastAPI backend for ML inference
   - A Streamlit frontend for user interaction
@@ -15,19 +14,20 @@ A ***Machine Learning–powered web application*** that predicts the Insurance P
   - ### AWS EC2 deployment
   <br>
 This application predicts the insurance premium category using the following features:
-  1.Age
-  2.Weight
-  3.Height
-  4.Income (LPA)
-  5.Smoking status
-  6.City
-  7.Occupation
+  - Age
+  - Weight
+  - Height
+  - Income (LPA)
+  - Smoking status
+  - City
+  - Occupation
 
+<img src="insurance_premium/Screenshot from 2025-11-21 11-16-33.png"></img>
 ### The ML model returns:
   
-  1.predicted_category
-  2.confidence score
-  3.class_probabilities for each class
+  - predicted_category
+  - confidence score
+  - class_probabilities for each class
 
 ### The entire workflow is automated from model inference → FastAPI API → Streamlit UI.
 ## Installation
@@ -53,6 +53,7 @@ To set up the project locally, follow these steps:
     http://13.235.246.150:8000/predict
     ```
 Opitional **Run  backend locally :**
+
     ```bash
       uvicorn app:app --reload --host 0.0.0.0 --port 8000
     ```
@@ -67,20 +68,20 @@ Opitional **Run  backend locally :**
     1. Install Docker
     2. Create account on Dockerhub
 
-    Step 1: Create Dockerfile
-    Step 2: Build the docker image
+    - Step 1: Create Dockerfile
+    - Step 2: Build the docker image
     ```bash
      docker build -t dockername/insurance-premium-api
     ```
-    step 4: docker login:
+    - step 4: docker login:
      ```bash
       docker login
     ```
-    Step 3: push image to dockerhub:
+    - Step 3: push image to dockerhub:
       ```bash
         docker push dockername/insurance-premium-api:latest
       ```
-    step 4: Run image locally:
+    - step 4: Run image locally:
     ```bash
       docker run -p 8000:8000 dockername/insurance-premium-api:latest
     ```

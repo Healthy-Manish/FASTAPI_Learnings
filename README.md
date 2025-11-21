@@ -44,17 +44,12 @@ To set up the project locally, follow these steps:
     pip install -r backend/requirements.txt
     ```
 
-3. **Run the API at:**
 
-    ```bash
-    http://13.235.246.150:8000/predict
-    
-    ```
-**(OPTIONAL) Run  backend locally :**
+3. **Run  backend locally :**
  ```bash
      uvicorn app:app --reload --host 0.0.0.0 --port 8000 
  ```
-
+**(OPTIONAL) you can run backend on AWS for cloud access**
 4. **Frontend--Streamlit :**
 
       ```bash

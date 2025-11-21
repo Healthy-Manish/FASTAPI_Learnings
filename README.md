@@ -1,18 +1,18 @@
-# Plant Disease Classifier
+# Insurance Premium Pridiction model
 
 ## Description
 A full-stack Machine Learning web application that predicts ***Insurance Premium Category (Low / Medium / High)*** based on user health and lifestyle attributes.
 The app is fully deployed on AWS and containerized using Docker for production-grade reliability.
 # This application is build over streamlit to create a frontend <br>
-<img src="Screenshot from 2025-11-21 11-16-33.png"></img>
+<img src="insurance_premium/Screenshot from 2025-11-21 11-16-33.png"></img>
 
 ### 🧠 Project Overview
 A ***Machine Learning–powered web application*** that predicts the Insurance Premium Category (Low / Medium / High) based on user health and lifestyle attributes.<br>
 ### The project includes:
   - A FastAPI backend for ML inference
   - A Streamlit frontend for user interaction
-  - <h2>Full Docker containerization</h2>
-  - <h2>AWS EC2 deployment</h2>
+  - ### Full Docker containerization 
+  - ### AWS EC2 deployment
   <br>
 This application predicts the insurance premium category using the following features:
 1.Age

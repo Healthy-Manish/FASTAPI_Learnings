@@ -1,5 +1,4 @@
-# Insurance Premium Pridiction model
-
+# Insurance Premium Prediction model
 ## Description
 A full-stack Machine Learning web application that predicts ***Insurance Premium Category (Low / Medium / High)*** based on user health and lifestyle attributes.
 The app is fully deployed on AWS and containerized using Docker for production-grade reliability.
@@ -52,10 +51,10 @@ To set up the project locally, follow these steps:
     
     ```
 **(OPTIONAL) Run  backend locally :**
-    ```bash
-       uvicorn app:app --reload --host 0.0.0.0 --port 8000 
-       
-    ```
+ ```bash
+     uvicorn app:app --reload --host 0.0.0.0 --port 8000 
+ ```
+
 4. **Frontend--Streamlit :**
 
       ```bash
@@ -85,10 +84,9 @@ To set up the project locally, follow these steps:
       docker run -p 8000:8000 dockername/insurance-premium-api:latest
     ```
 **(OPTIONAL) You can pull my image :**
-     ```bash
-        docker push healthymanish/insurance-premium-api:latest
-        
-    ```
+```bash
+ docker pull healthymanish/insurance-premium-api:latest
+```
 6. **API request example :**
 ```json
   {

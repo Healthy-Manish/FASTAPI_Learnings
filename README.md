@@ -50,6 +50,7 @@ To set up the project locally, follow these steps:
      uvicorn app:app --reload --host 0.0.0.0 --port 8000 
  ```
 **(OPTIONAL) you can run backend on AWS for cloud access**
+
 4. **Frontend--Streamlit :**
 
       ```bash

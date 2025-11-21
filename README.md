@@ -15,19 +15,19 @@ A ***Machine Learning–powered web application*** that predicts the Insurance P
   - ### AWS EC2 deployment
   <br>
 This application predicts the insurance premium category using the following features:
-1.Age
-2.Weight
-3.Height
-4.Income (LPA)
-5.Smoking status
-6.City
-7.Occupation
+  1.Age
+  2.Weight
+  3.Height
+  4.Income (LPA)
+  5.Smoking status
+  6.City
+  7.Occupation
 
 ### The ML model returns:
-
-1.predicted_category
-2.confidence score
-3.class_probabilities for each class
+  
+  1.predicted_category
+  2.confidence score
+  3.class_probabilities for each class
 
 ### The entire workflow is automated from model inference → FastAPI API → Streamlit UI.
 ## Installation
@@ -58,9 +58,9 @@ Opitional **Run  backend locally :**
     ```
 4. **Frontend--Streamlit :**
 
-        ```bash
-       streamlit run frontend.py
-        ```
+      ```bash
+         streamlit run frontend.py
+      ```
 
    
 5. **Docker setup :**
@@ -74,20 +74,20 @@ Opitional **Run  backend locally :**
     ```
     step 4: docker login:
      ```bash
-    docker login
+      docker login
     ```
     Step 3: push image to dockerhub:
       ```bash
-      docker push dockername/insurance-premium-api:latest
-    ```
+        docker push dockername/insurance-premium-api:latest
+      ```
     step 4: Run image locally:
     ```bash
       docker run -p 8000:8000 dockername/insurance-premium-api:latest
     ```
 OPTIONAL **You can pull my image :**
-      ```bash
+     ```bash
         docker push healthymanish/insurance-premium-api:latest
-        ```
+    ```
 6. **API request example :**
 ```json
   {
@@ -114,17 +114,17 @@ OPTIONAL **You can pull my image :**
 
 ```
 ### 🛠 Tech Stack
-<h2>Frontend</h2><br>
-- Streamlit
-- Python 3.11
-<br>
-<h2>Backend</h2> <br>
-- FastAPI
-- Uvicorn
-- Pydantic
-- Scikit-Learn
-<br>
-<h2>Deployment: </h2><br>
-- Docker
-- AWS EC2
-- NGINX (optional reverse proxy)
+Frontend: 
+  - Streamlit
+  - Python 3.11
+
+Backend:
+  - FastAPI
+  - Uvicorn
+  - Pydantic
+  - Scikit-Learn
+
+Deployment:
+  - Docker
+  - AWS EC2
+  - NGINX (optional reverse proxy)
